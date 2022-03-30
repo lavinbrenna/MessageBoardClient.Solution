@@ -1,0 +1,12 @@
+<h1>Edit Info:</h1>
+<form action="/Messages/Details/@(Model.MessageId)" method="post">
+  <label for="title">Message's Title</label>
+  <input id="title" title="title" type="text" value="@(Model.Title)">
+  <label for="body">Message's Body</label>
+  <input id="body" title="body" type="text" value="@(Model.MessageBody)">
+  <label for="group">Message's Group</label>
+  <input id="group" title="group" type="text" value="@(Model.Group)">
+  <button type="submit">Go!</button>
+</form>
+
+<a href="/Messages/Details/@(Model.MessageId)"><p>Return to Details</p></a>

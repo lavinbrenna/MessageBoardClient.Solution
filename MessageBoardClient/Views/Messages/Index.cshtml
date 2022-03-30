@@ -1,0 +1,17 @@
+<h1>All Messages:</h1>
+
+<ol>
+  @foreach(Message message in Model)
+  {
+    <ul>
+      <li>ID: @message.MessageId</li>
+      <li>Title: @message.Title</li>
+      <li>Body: @message.MessageBody</li>
+      <li>Group: @message.Group</li>
+      <li>Date: @message.MessageDate</li>
+      <li>Posted by: @message.UserName</li>
+    </ul>
+    <a href="/Messages/Details/@message.MessageId"><p>View Details</p></a>
+    <br>
+  }
+</ol>
